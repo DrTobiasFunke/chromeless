@@ -144,7 +144,7 @@ function validate(manf) {
       }
     },
     config: {
-	  required: false,
+      required: false,
       check: objectCheck
     }
   };

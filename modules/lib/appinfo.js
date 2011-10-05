@@ -143,10 +143,10 @@ function validate(manf) {
         if (typeof(x) !== 'string' || !x.match(/^[0-9]+\.[0-9]+$/)) errorThrow();
       }
     },
-	config: {
-		required: false,
-		check: objectCheck
-	}
+    config: {
+        required: false,
+        check: objectCheck
+    }
   };
 
   var manfAliases = {

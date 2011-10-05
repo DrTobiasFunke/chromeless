@@ -1,0 +1,8 @@
+{
+    "name": "Config Test", 
+    "version": "0.1",
+	"resizable": true,
+	"config": {
+		"startURL": "http://www.google.com"
+	}
+}

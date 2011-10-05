@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <iframe id="inner" width="100%" height="100%"></iframe>
+    </body >
+    <script type="text/javascript">
+        var config = require('appinfo').contents.config;
+        document.getElementById('inner').src = config.startURL;
+    </script>
+</html>

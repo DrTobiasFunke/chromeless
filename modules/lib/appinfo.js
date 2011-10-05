@@ -74,6 +74,10 @@ function validate(manf) {
     if (!isInteger(x)) errorThrow();
   };
 
+  var objectCheck = function(x) {
+	if (typeof x !== 'object') errorThrow();
+  };
+
   // a table that specifies manfiest properties, and validation functions
   // each key is the name of a valid top level property.
   // each value is an object with four optional properties:
@@ -138,7 +142,11 @@ function validate(manf) {
       check: function(x) {
         if (typeof(x) !== 'string' || !x.match(/^[0-9]+\.[0-9]+$/)) errorThrow();
       }
-    }
+    },
+	config: {
+		required: false,
+		check: objectCheck
+	}
   };
 
   var manfAliases = {
